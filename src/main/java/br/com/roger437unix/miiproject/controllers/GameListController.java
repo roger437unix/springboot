@@ -30,7 +30,7 @@ public class GameListController {
 		return result;		
 	}
 	
-	@GetMapping(value = "/{listId}/games")										// Mapeando com método Get do HTTP
+	@GetMapping(value = "/{listId}/games")									// Mapeando com método Get do HTTP
 	public List<GameMinDTO> findByList(@PathVariable Long listId) {	
 		List<GameMinDTO> result = gameService.findByList(listId);
 		return result;		
